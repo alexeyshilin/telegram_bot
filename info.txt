@@ -6,4 +6,6 @@ export PATH="$PATH:/usr/local/share/libs/elixir-1.11.4/bin"
 cd telegrambot
 mix test
 
+/usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
+Telegrambot.hello
 
