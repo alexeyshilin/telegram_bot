@@ -9,3 +9,5 @@ mix test
 /usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
 Telegrambot.hello
 
+/usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
+Application.get_env(:telegrambot, :token)
