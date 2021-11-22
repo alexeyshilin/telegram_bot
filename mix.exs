@@ -3,7 +3,7 @@ defmodule Telegrambot.MixProject do
 
   def project do
     [
-      app: :telegrambot,
+      app: :telegrambot, # the name of the file to load from the lib folder
       version: "0.1.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
