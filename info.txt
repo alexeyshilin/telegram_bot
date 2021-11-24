@@ -25,3 +25,7 @@ Telegrambot.timexnow
 
 /usr/local/share/libs/elixir-1.11.4/bin/mix deps.compile
 /usr/local/share/libs/elixir-1.11.4/bin/mix deps.clean
+
+/usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
+token = Application.get_env(:telegrambot, :token)
+Telegram.Api.request(token, "getMe")
