@@ -22,3 +22,6 @@ Timex.now
 
 /usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
 Telegrambot.timexnow
+
+/usr/local/share/libs/elixir-1.11.4/bin/mix deps.compile
+/usr/local/share/libs/elixir-1.11.4/bin/mix deps.clean
