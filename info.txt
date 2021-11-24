@@ -15,3 +15,7 @@ Application.get_env(:telegrambot, :token)
 
 /usr/local/share/libs/elixir-1.11.4/bin/mix help | grep deps
 /usr/local/share/libs/elixir-1.11.4/bin/mix deps.tree
+
+/usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
+use Timex
+Timex.now
