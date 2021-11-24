@@ -3,6 +3,8 @@ defmodule Telegrambot do
   Documentation for `Telegrambot`.
   """
 
+  use Timex
+
   @doc """
   Hello world.
 
@@ -15,4 +17,9 @@ defmodule Telegrambot do
   def hello do
     :world
   end
+
+  def timexnow do
+    IO.puts Timex.now
+  end
+
 end

@@ -19,3 +19,6 @@ Application.get_env(:telegrambot, :token)
 /usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
 use Timex
 Timex.now
+
+/usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
+Telegrambot.timexnow
