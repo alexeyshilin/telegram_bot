@@ -41,3 +41,9 @@ fileId = res["photo"]["big_file_id"]
 {:ok, res2} = Telegram.Api.request(token, "getFile", file_id: "#{fileId}")
 # https://api.telegram.org/file/bot<token>/<file_path>
 System.cmd("curl", ["-O", "https://api.telegram.org/file/bot#{token}/#{res2["file_path"]}"])
+
+# send photo
+token = Application.get_env(:telegrambot, :token)
+chat_id = -1001728410621
+photo = "test.jpg"
+Telegram.Api.request(token, "sendPhoto", chat_id: chat_id, photo: {:file, photo})
