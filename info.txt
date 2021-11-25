@@ -29,3 +29,8 @@ Telegrambot.timexnow
 /usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
 token = Application.get_env(:telegrambot, :token)
 Telegram.Api.request(token, "getMe")
+
+/usr/local/share/libs/elixir-1.11.4/bin/iex -S mix
+Telegram.Api.request(token, "getChat", chat_id: "@ffatherfrost")
+Telegram.Api.request(token, "getChat", chat_id: -1001728410621)
+Telegram.Api.request(token, "getFile", file_id: "AQADAgADbLgxG3G4-EgACAIAAwN8VcQW____Rfwklfm0zUsiBA")
