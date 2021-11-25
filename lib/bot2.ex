@@ -18,6 +18,30 @@ defmodule Bot2 do
          text: "Fib[#{intVal}] = #{Fib.fib(intVal)}")
     end
 
+#  edited_message do
+#    # handler code
+#  end
+#  channel_post do
+#    # handler code
+#  end
+#  edited_channel_post do
+#    # handler code
+#  end
+#  inline_query _query do
+#    # handler code
+#  end
+#  chosen_inline_result _query do
+#    # handler code
+#  end
+#  callback_query do
+#    # handler code
+#  end
+#  shipping_query do
+#    # handler code
+#  end
+#  pre_checkout_query do
+#    # handler code
+#  end
 
   def handle_update(
         token,
@@ -49,7 +73,6 @@ defmodule Bot2 do
     {seconds, ""} = arg |> String.trim() |> Integer.parse()
     seconds
   end
-
 
     any do
        IO.puts "not found"
