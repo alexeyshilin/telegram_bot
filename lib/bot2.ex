@@ -12,6 +12,7 @@ defmodule Bot2 do
     username: "FatherFrostBot",
     purge: true
 
+    # receive message by bot directly
     command "fib", args do
         {intVal, ""} = Integer.parse(Enum.at(args,0))
          request("sendMessage", chat_id: update["chat"]["id"],

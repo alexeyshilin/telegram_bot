@@ -6,6 +6,7 @@ defmodule Bot1 do
     username: "FatherFrostBot",
     purge: true
 
+    # receive message by bot directly
   message do
     request(
       "sendMessage",
