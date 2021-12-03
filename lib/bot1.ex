@@ -8,6 +8,12 @@ defmodule Bot1 do
 
     # receive message by bot directly
   message do
+    if update["text"] == "sleep"
+    do
+#	:timer.sleep(10)
+	Process.sleep(7000)
+    end
+
     request(
       "sendMessage",
       chat_id: update["chat"]["id"],
